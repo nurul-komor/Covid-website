@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medim</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            $( "i.fas.fa-bars" ).click(function() {
+                $('#sliderID').css('left','0')
+});
+        })
+        $(document).ready(function(){
+            $( "i.fas.fa-times" ).click(function() {
+                $('#sliderID').css('left','-100%')
+});
+        })
+
+
+
+        $(document).ready(function(){
+            $( "#r1" ).click(function() {
+                $('#doctorCnt').css('left','100%')
+});
+        })
+        $(document).ready(function(){
+            $( "#r2" ).click(function() {
+                $('#doctorCnt').css('left','0')
+});
+        })
+        $(document).ready(function(){
+            $( "#r3" ).click(function() {
+                $('#doctorCnt').css('left','-100%')
+});
+        })
+//         $(document).ready(function(){
+//             $( ".about_btn" ).click(function() {
+//                 $('body').css('bottom','1000px')
+// });
+//         })
+  
+    </script>
+    <nav>
+        <div class="logo">
+            <img src="img/logo.png" alt="MEDIM">
+        </div>
+        <ul id="sliderID">
+            <li><span class="active"></span><a href="index.html">Home</a></li>
+            <li><span></span><a href="#">About</a>
+                
+                
+            </li>
+            <li><span style="margin-left:-10px;"></span><a href="#">Department<i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Ipsumabc</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Ipsum</a></li>
+                    <li><a href="">Ipsum</a></li>
+                </ul>
+            </li>
+            <li style="margin: 0 2px; width: 57px;"><span style="margin-left: -5px;"></span><a href="#">Page<i class="fas fa-chevron-down"></i></a>
+                
+                <ul class="submenu" style="margin-left:0px;">
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    <li><a href="">Lorem</a></li>
+                    
+                </ul>
+            </li>
+            <li><span></span><a href="#">Contact</a></li>
+            <div class="about_btn">
+                <a href="#">About Covid</a>
+            </div>
+            <div class="close">
+                <label for="close"><i class="fas fa-times"></i></label>
+                <input type="checkbox" name="" id="close" style="display: none;">
+            </div>
+        </ul>
+        <div class="bar">
+            <input type="checkbox" name="" id="menuS">
+            <label for="menuS"><i class="fas fa-bars" ></i></label>
+        </div>
+    </nav>
+    <div class="prevent-about">
+        <div class="prevent">
+            <div class="message">
+                <img src="img/virus2.png" alt="">
+                <h1><span style="color:#1347E9;text-transform:uppercase">covid-19</span><br>
+                Be aware of
+                    Coronna virus</h1>
+                <a href="#">How to prevent</a>
+            </div>
+            
+        </div>
+        <div class="about_covid">
+            <div class="img2">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="about_text">
+                <h2>About<br>
+                COVID-19</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est, recusandae quas fuga velit eius accusantium, rerum error facilis quia adipisci explicabo doloribus qui illo aliquam minima! Nisi aliquid doloremque nobis illum consequuntur dolore numquam quasi, inventore corrupti minima deserunt distinctio?</p>
+                <div class="do_dont-do">
+                    <div class="do">
+                        <ul>
+                            <li><span><i class="fas fa-check"></i></span> Your Hands</li>
+                            <li><span><i class="fas fa-check"></i></span> Much Water</li>
+                            <li><span><i class="fas fa-check"></i></span>Use Face Mask</li>
+                        </ul>
+                    </div>
+                    <div class="dont-do">
+                        <ul>
+                            <li><span><i class="fas fa-times"></i></span> Close Contact</li>
+                            <li><span><i class="fas fa-times"></i></span>Don't Touch Face</li>
+                            <li><span><i class="fas fa-times"></i></span>Social Distance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculation">
+        <ul>
+            <li>
+                <h2>362256</h2>
+                <p>Active cases</p>
+            </li>
+            <li>
+                <h2>86457</h2>
+                <p>Total Deaths</p>
+            </li>
+            <li>
+                <h2>132332</h2>
+                <p>Recovered</p>
+            </li>
+            
+        </ul>
+    </div>
+    <div id="symptom">
+        <p>Corona virus symptoms</p>
+        <h2>Covid-19 sypmtoms</h2>
+        <img src="img/graph.png" alt="">
+        <div class="row">
+            <div class="box1-wrapper">
+
+            
+            <div class="box1">
+                    <div class="img"><img src="img/box1img.png" alt=""></div>
+                    <h4>Hot Feaver</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officiis est delectus expedita nobis iure, aliquid ipsum aperiam doloribus hic!</p>
+            </div>
+            <div class="box1">
+                <div class="img"><img src="img/box1img.png" alt=""></div>
+                    <h4>Hot Feaver</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officiis est delectus expedita nobis iure, aliquid ipsum aperiam doloribus hic!</p>
+            </div>
+            <div class="box1">
+                <div class="img"><img src="img/box1img.png" alt=""></div>
+                    <h4>Hot Feaver</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officiis est delectus expedita nobis iure, aliquid ipsum aperiam doloribus hic!</p>
+            </div>
+            </div>
+            <div class="box2-wrapper">
+            <div class="box2">
+                    <div class="img"><img src="img/box1img.png" alt=""></div>
+                    <h4>Hot Feaver</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officiis est delectus expedita nobis iure, aliquid ipsum aperiam doloribus hic!</p>
+            </div>
+            <div class="box2">
+                    <div class="img"><img src="img/box1img.png" alt=""></div>
+                    <h4>Hot Feaver</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officiis est delectus expedita nobis iure, aliquid ipsum aperiam doloribus hic!</p>
+            </div>
+            <div class="box2">
+                    <div class="img"><img src="img/box1img.png" alt=""></div>
+                    <h4>Hot Feaver</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti officiis est delectus expedita nobis iure, aliquid ipsum aperiam doloribus hic!</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="prevention"><!--prevention start-->
+        <p>HOW TO STAY SAFE IMPORTANT PERAUTIONS</p>
+        <h2>Prevention From Cornoa</h2>
+        <img src="img/graph2.png" alt="">
+        <div class="row">
+            <div class="box1-wrapper">
+            <div class="box1">
+                <img src="img/prevention.png" alt="">
+                <h2>Avoide Close Contact</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque minima qui quisquam iste at nam eveniet magni exercitationem vero tenetur!</p>
+            </div>
+            <div class="box1">
+                <img src="img/prevention.png" alt="">
+                <h2>Avoide Close Contact</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque minima qui quisquam iste at nam eveniet magni exercitationem vero tenetur!</p>
+            </div>
+            <div class="box1">
+                <img src="img/prevention.png" alt="">
+                <h2>Avoide Close Contact</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque minima qui quisquam iste at nam eveniet magni exercitationem vero tenetur!</p>
+            </div>
+            </div>
+            <div class="box2-wrapper">
+            <div class="box2">
+                <img src="img/prevention.png" alt="">
+                <h2>Avoide Close Contact</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque minima qui quisquam iste at nam eveniet magni exercitationem vero tenetur!</p>
+            </div>
+            <div class="box2">
+                <img src="img/prevention.png" alt="">
+                <h2>Avoide Close Contact</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque minima qui quisquam iste at nam eveniet magni exercitationem vero tenetur!</p>
+            </div>
+            <div class="box2">
+                <img src="img/prevention.png" alt="">
+                <h2>Avoide Close Contact</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque minima qui quisquam iste at nam eveniet magni exercitationem vero tenetur!</p>
+            </div>
+        </div>
+        </div>
+    </div><!--prevention end-->
+    <div class="doctors-container">
+
+        <p>Here is Medim specialist doctors</p>
+        <h2>Medim Doctors</h2>
+        <img src="img/graph.png" alt="">
+        <div id="doctorCnt" >
+            <div class="doctor">
+                <div class="doctor-img1">
+                <div class="hover-effects1">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+                <div class="doctor-img2">
+                <div class="hover-effects2">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+                <div class="doctor-img3">
+                <div class="hover-effects3">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+            </div>
+            <div class="doctor">
+                <div class="doctor-img1">
+                <div class="hover-effects1">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+                <div class="doctor-img2">
+                <div class="hover-effects2">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+                <div class="doctor-img3">
+                <div class="hover-effects3">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+            </div>
+            <div class="doctor">
+                <div class="doctor-img1">
+                <div class="hover-effects1">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+                <div class="doctor-img2">
+                <div class="hover-effects2">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+                <div class="doctor-img3">
+                <div class="hover-effects3">
+                    <a href="#"><div class="arrow">
+                        <i class="fas fa-long-arrow-right"></i>
+                    </div>
+                    <div class="social-media">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                    </div>
+                    <div class="about-doctor">
+                        <h4>Dr. Jonthon Doe</h4>
+                        <p>Cardiolgist</p>
+                    </div></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkBox" >
+            <input type="radio" name="r" id="r1" style="cursor: pointer;">
+            <input type="radio" name="r" id="r2" checked style="cursor: pointer;">
+            <input type="radio" name="r" id="r3" style="cursor: pointer;">
+        </div>
+        
+    </div>
+    <div class="medimArticle">
+        <div class="title">
+        <p>Here is Medim specialist doctors</p>
+        <h2>Medim Doctors</h2>
+        <img src="img/graph.png" alt="">
+        </div>
+        <ul>
+            <a href=""><li>
+                <div class="medimImg"></div>
+                <p style="color:rgb(49, 49, 49)">26 Jan 2017 &#124;<span style="font-size: 14px;font-weight: 500;">Meidical, COVID-19</span></p>
+                <h4>How to prevent you and your family from COVID-19?</h4>
+                <a style="text-decoration: dotted underline;" href="#">Read more</a>
+            </li></a>
+            <a href=""><li>
+                <div class="medimImg"></div>
+                <p style="color:rgb(49, 49, 49)">26 Jan 2017 &#124;<span style="font-size: 14px;font-weight: 500;">Meidical, COVID-19</span></p>
+                <h4>How to prevent you and your family from COVID-19?</h4>
+                <a style="text-decoration: dotted underline;" href="#">Read more</a>
+            </li></a>
+            <a href=""><li>
+                <div class="medimImg"></div>
+                <p style="color:rgb(49, 49, 49)">26 Jan 2017 &#124;<span style="font-size: 14px;font-weight: 500;">Meidical, COVID-19</span></p>
+                <h4>How to prevent you and your family from COVID-19?</h4>
+                <a style="text-decoration: dotted underline;" href="#">Read more</a>
+            </li></a>
+            
+        </ul>
+    </div>
+    <footer>
+        <div class="address" >
+            <img src="img/logo.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit itaque eveniet deserunt explicabo non enim eos quo, libero laboriosam hic saepe quis autem nulla reprehenderit laborum doloremque, .</p>
+            <a href="+(1234) 456 7890"><i class="fas fa-mobile-alt"></i> +(1234) 456 7890<br></a>
+            <a><i class="fas fa-map-marker-alt"></i>133 North Luke Lane.South Bend</a>
+        </div>
+        <div class="options">
+            <h2>Our Department</h2>
+            <ul>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology
+                    <ul class="sub">
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology &#11163;
+                    <ul class="sub">
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology</li>
+            </ul>
+        </div>
+        <div class="options">
+            <h2>Important Links</h2>
+            <ul>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology &#11163;
+                    <ul class="sub">
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                    </ul>
+                </li>
+                <li><i class="fas fa-play"></i>Neurology</li>
+                <li><i class="fas fa-play"></i>Neurology &#11163;
+                    <ul class="sub">
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                        <li><a href="">Lorem</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam officiis velit placeat deleniti libero ipsam!</p>
+            <div class="mailBox">
+                <form action=".php">
+                    <input type="text" placeholder="enter mail" name="mail" value="">
+                    <button type="submit" target="_blank"><i class="fab fa-telegram-plane" ></i></button>
+                </form>
+            </div>
+            <div class="social-media">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright"><p>&copy; 2018. All Right Reserved</p></div>
+</body>
+</html>
+
